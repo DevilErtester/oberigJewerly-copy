@@ -26,3 +26,10 @@
 #practicaOberigJewelry header nav.idiom > ul:hover li {
   display: block;
 }
+#practicaOberigJewelry section.ring figure {
+  display: flex;
+  justify-content: space-around;
+}
+#practicaOberigJewelry section.ring figure img {
+  width: 30%;
+}
