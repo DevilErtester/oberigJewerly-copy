@@ -1,3 +1,16 @@
+#practicaOberigJewelry {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e1eeef+0,ffffff+49,fdf7ff+100 */
+  background: #e1eeef;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #e1eeef 0%, #ffffff 49%, #fdf7ff 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #e1eeef 0%, #ffffff 49%, #fdf7ff 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #e1eeef 0%, #ffffff 49%, #fdf7ff 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e1eeef', endColorstr='#fdf7ff', GradientType=1);
+  /* IE6-9 */
+}
 #practicaOberigJewelry header nav ul {
   display: flex;
   justify-content: space-evenly;
