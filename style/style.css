@@ -26,24 +26,22 @@
   margin-left: 40px;
   margin-right: 40px;
   font-size: 2em;
-  padding-bottom: 100px;
-}
-#practicaOberigJewelry main {
-  display: flex;
+  padding-bottom: 70px;
 }
 #practicaOberigJewelry main section {
   flex-flow: row;
 }
 #practicaOberigJewelry main section.ring {
-  position: absolute;
-  background-image: url("../img/background_oberig.jpg");
-  background-size: cover;
-  width: 100%;
+  margin: 60px;
+  position: relative;
+  background-image: url("../img/background_oberig.png");
+  background-size: contain ;
   height: 700px;
 }
 #practicaOberigJewelry main section.ring figure img {
   position: relative;
-  top: 150px;
-  transform: translateX(50%);
+  top: 170px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 20%;
 }
