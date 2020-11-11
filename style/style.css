@@ -1,6 +1,18 @@
-#practicaOberigJewelry {
-  background-image: url(../img/fons.webp);
-  background-size: contain ;
+#practicaOberigJewelry header {
+  top: 0px;
+  position: sticky;
+  z-index: 1;
+}
+#practicaOberigJewelry header nav {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+64,ffffff+100&1+26,0+100 */
+  background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 26%, rgba(255, 255, 255, 0.49) 64%, rgba(255, 255, 255, 0) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 26%, rgba(255, 255, 255, 0.49) 64%, rgba(255, 255, 255, 0) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ffffff 0%, #ffffff 26%, rgba(255, 255, 255, 0.49) 64%, rgba(255, 255, 255, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#00ffffff', GradientType=0);
+  /* IE6-9 */
 }
 #practicaOberigJewelry header nav ul {
   display: flex;
@@ -8,6 +20,7 @@
   list-style: none;
 }
 #practicaOberigJewelry header nav ul li {
+  text-align: center;
   margin-top: 30px;
   padding: 10px;
   width: 150px;
@@ -20,14 +33,17 @@
   padding-bottom: 70px;
 }
 #practicaOberigJewelry main section {
+  height: 100vh;
   flex-flow: row;
 }
 #practicaOberigJewelry main section.ring {
   margin: 60px;
   position: relative;
-  background-image: url("../img/background_oberig.jpg");
+  background: url("../img/background_oberig.jpg") no-repeat;
   background-size: contain ;
-  height: 700px;
+}
+#practicaOberigJewelry main section.ring figure {
+  position: relative;
 }
 #practicaOberigJewelry main section.ring figure img {
   position: relative;
@@ -35,4 +51,95 @@
   left: 50%;
   transform: translateX(-50%);
   width: 20%;
+}
+#practicaOberigJewelry main section.symbols {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#practicaOberigJewelry main section.symbols .texto {
+  position: relative;
+  width: 300px;
+  margin: 20px;
+  top: 30%;
+  transform: translateX(-50%);
+}
+#practicaOberigJewelry main section.symbols .texto p {
+  margin: 20px;
+  margin-top: 0px;
+}
+#practicaOberigJewelry main section.symbols .texto h2 {
+  font-size: 2em;
+}
+#practicaOberigJewelry main section.symbols .slider {
+  width: 300px;
+  height: 300px;
+  margin-top: 75px;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 0 16px 35px rgba(93, 102, 114, 0.15);
+  box-shadow: inset 0 16px 35px rgba(93, 102, 114, 0.15);
+  border: 1px solid hsla(0, 0%, 100%, 0);
+  overflow: hidden;
+  width: 457px;
+  height: 457px;
+}
+#practicaOberigJewelry main section.symbols .slider img {
+  width: 300px;
+  position: relative;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#practicaOberigJewelry main section.symbols .slider h1 {
+  position: relative;
+  bottom: 10px;
+}
+#practicaOberigJewelry main section.symbols .SliderRadial {
+  width: 300px;
+  position: relative;
+  top: 160px;
+  right: 200px;
+}
+#practicaOberigJewelry main section.symbols .SliderRadial img {
+  width: 40px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#practicaOberigJewelry main section.symbols .SliderRadial .SliderRadial__control {
+  position: absolute;
+  border-radius: 50%;
+  width: 78px;
+  height: 78px;
+  -webkit-box-shadow: inset 0 -16px 35px rgba(93, 102, 114, 0.18);
+  box-shadow: inset 0 -16px 35px rgba(93, 102, 114, 0.18);
+  border: 1px solid hsla(0, 0%, 100%, 0.4);
+  background-color: hsla(0, 0%, 100%, 0);
+  cursor: pointer;
+}
+#practicaOberigJewelry main section.symbols .SliderRadial .SliderRadial__control:first-child {
+  left: 255.00561678px;
+  top: -31.86209183px;
+  transform: translate(-50%, -50%);
+}
+#practicaOberigJewelry main section.symbols .SliderRadial .SliderRadial__control:nth-child(2) {
+  left: 331.86695621px;
+  top: 45.00280843px;
+  transform: translate(-50%, -50%);
+}
+#practicaOberigJewelry main section.symbols .SliderRadial .SliderRadial__control:nth-child(3) {
+  left: 360px;
+  top: 150px;
+  transform: translate(-50%, -50%);
+}
+#practicaOberigJewelry main section.symbols .SliderRadial .SliderRadial__control:nth-child(4) {
+  left: 331.86695621px;
+  top: 254.99719157px;
+  transform: translate(-50%, -50%);
+}
+#practicaOberigJewelry main section.symbols .SliderRadial .SliderRadial__control:nth-child(5) {
+  left: 255.00561678px;
+  top: 331.86209183px;
+  transform: translate(-50%, -50%);
 }

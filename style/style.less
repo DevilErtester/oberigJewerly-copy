@@ -1,14 +1,21 @@
 #practicaOberigJewelry{
-    background-image: url(../img/fons.webp);
-    background-size: contain ;
     header{
+        top: 0px;
+        position: sticky;
+        z-index: 1;
         nav{
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+64,ffffff+100&1+26,0+100 */
+            background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 26%, rgba(255,255,255,0.49) 64%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 26%,rgba(255,255,255,0.49) 64%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 26%,rgba(255,255,255,0.49) 64%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
 
             ul{
                 display:flex;
                 justify-content: space-around;
                 list-style: none;
                 li{
+                    text-align: center;
                     margin-top: 30px;
                     padding: 10px;
                     width: 150px;
@@ -26,17 +33,18 @@
     main{
         
         section{
+            height: 100vh;
             flex-flow: row;
             &.ring{
+                
                 margin: 60px;
                 position: relative;
-                background-image: url("../img/background_oberig.jpg");
+                background: url("../img/background_oberig.jpg") no-repeat;
                 background-size: contain ;
-
-                height: 700px;
+             
 
                 figure{
-
+                    position: relative;
                     img{
                         position: relative;
                         top: 170px;
@@ -46,10 +54,104 @@
                         
                     }
                 }
-
             }
             &.symbols{
-                
+                position: relative;;
+                @sliderSize:300px;
+                @radio: 210;
+                @grados: 30;
+                display: flex;
+                justify-content: center;
+                .texto{
+                    position: relative;
+                    width:  @sliderSize;
+                    margin: 20px;
+                    top: 30%;
+                    transform: translateX(-50%);
+                    p{
+                        margin: 20px;
+                        margin-top: 0px;
+                    }
+                    h2{
+                        font-size: 2em;
+                    }
+                }
+                .slider{
+                    width: @sliderSize;
+                    height: @sliderSize;
+                    img{
+                        width:@sliderSize ;
+                        position: relative;
+                        top: 40%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                    }
+                    h1{
+                        position: relative;
+                        bottom: 10px;
+                    }
+                    margin-top: 75px;
+                    border-radius: 50%;
+                    -webkit-box-shadow: inset 0 16px 35px rgba(93, 102, 114, .15);
+                    box-shadow: inset 0 16px 35px rgba(93, 102, 114, .15);
+                    border: 1px solid hsla(0, 0%, 100%, 0);
+                    overflow: hidden;
+                    width: 457px;
+                    height: 457px; 
+                }
+                .SliderRadial{
+                    width: @sliderSize;
+                    position: relative;
+                    top: 160px;
+                    right: 200px;
+                     img{
+                         width: 40px;
+                         position: relative;
+                         top: 50%;
+                         left: 50%;
+                         transform: translate(-50%,-50%);
+                     }
+                     .SliderRadial__control{
+                        position: absolute;
+                        border-radius: 50%;
+                        width: 78px;
+                        height: 78px;
+                        -webkit-box-shadow: inset 0 -16px 35px rgba(93, 102, 114, .18);
+                        box-shadow: inset 0 -16px 35px rgba(93, 102, 114, .18);
+                        border: 1px solid hsla(0, 0%, 100%, .4);
+                        background-color: hsla(0, 0%, 100%, 0);
+                        cursor: pointer
+                     }
+                    .SliderRadial__control:first-child {
+                        left: @sliderSize * 0.5 + @radio * cos((@grados * 3.1415 / 180) * 2);
+                        top: @sliderSize * 0.5 - @radio * sin((@grados * 3.1415 / 180) * 2);
+                        transform: translate(-50%,-50%);
+                    }
+                    
+                    .SliderRadial__control:nth-child(2) {
+                        left: @sliderSize * 0.5 + @radio * cos((@grados * 3.1415 / 180) * 1);
+                        top: @sliderSize * 0.5 - @radio * sin((@grados * 3.1415 / 180) * 1);
+                        transform: translate(-50%,-50%);
+                    }
+                    
+                    .SliderRadial__control:nth-child(3) {
+                        left: @sliderSize * 0.5 + @radio * cos((@grados * 3.1415 / 180) * 0);
+                        top: @sliderSize * 0.5 - @radio * sin((@grados * 3.1415 / 180) * 0);
+                        transform: translate(-50%,-50%);
+                    }
+                    
+                    .SliderRadial__control:nth-child(4) {
+                        left: @sliderSize * 0.5 + @radio * cos((@grados * 3.1415 / 180) * -1);
+                        top: @sliderSize * 0.5 - @radio * sin((@grados * 3.1415 / 180) * -1);
+                        transform: translate(-50%,-50%);
+                    }
+                    
+                    .SliderRadial__control:nth-child(5) {
+                        left: @sliderSize * 0.5 + @radio * cos((@grados * 3.1415 / 180) * -2);
+                        top: @sliderSize * 0.5 - @radio * sin((@grados * 3.1415 / 180) * -2);
+                        transform: translate(-50%,-50%);
+                    }
+                }
             }
             &.others{
                 
