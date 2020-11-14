@@ -1,4 +1,18 @@
+@font-face {
+  font-family: CalibriBold;
+  src: url("../fonts/Calibri-Bold.21e06a6.woff2");
+}
+@font-face {
+  font-family: minion;
+  src: url("../fonts/MinionPro-Regular.cd4cea9.woff2");
+}
+@font-face {
+  font-family: Calibri;
+  src: url("../fonts/Calibri.89bd5cc.woff2");
+}
 #practicaOberigJewelry header {
+  font-family: Calibri;
+  letter-spacing: 2px;
   top: 0px;
   position: sticky;
   z-index: 1;
@@ -40,12 +54,12 @@
   margin: 60px;
   position: relative;
   background: url("../img/background_oberig.jpg") no-repeat;
-  background-size: contain ;
+  background-size: cover ;
 }
 #practicaOberigJewelry main section.ring figure {
   position: relative;
 }
-#practicaOberigJewelry main section.ring figure img {
+#practicaOberigJewelry main section.ring figure img.ringImg {
   position: relative;
   top: 170px;
   left: 50%;
@@ -56,20 +70,28 @@
   position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 #practicaOberigJewelry main section.symbols .texto {
+  color: grey;
+  font-family: minion;
   position: relative;
+  top: 50px;
+  right: 100px;
   width: 300px;
-  margin: 20px;
-  top: 30%;
-  transform: translateX(-50%);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.1px;
 }
 #practicaOberigJewelry main section.symbols .texto p {
-  margin: 20px;
+  font-family: Calibri;
+  margin: 50px;
   margin-top: 0px;
+  margin-right: 0px;
 }
 #practicaOberigJewelry main section.symbols .texto h2 {
-  font-size: 2em;
+  font-size: 3em;
 }
 #practicaOberigJewelry main section.symbols .slider {
   width: 300px;
@@ -91,13 +113,18 @@
   transform: translate(-50%, -50%);
 }
 #practicaOberigJewelry main section.symbols .slider h1 {
+  font-size: 1.5em;
+  color: grey;
+  font-family: minion;
   position: relative;
-  bottom: 10px;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 #practicaOberigJewelry main section.symbols .SliderRadial {
   width: 300px;
   position: relative;
-  top: 160px;
+  top: -100px;
   right: 200px;
 }
 #practicaOberigJewelry main section.symbols .SliderRadial img {
@@ -142,4 +169,18 @@
   left: 255.00561678px;
   top: 331.86209183px;
   transform: translate(-50%, -50%);
+}
+#practicaOberigJewelry main section.others {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#practicaOberigJewelry main section.others .othersLeft {
+  width: auto;
+}
+#practicaOberigJewelry main section.others .othersCenter {
+  width: auto;
+}
+#practicaOberigJewelry main section.others .othersRight {
+  width: auto;
 }
