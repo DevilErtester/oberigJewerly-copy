@@ -1,3 +1,6 @@
+#practicaOberigJewelry {
+  overflow-x: hidden;
+}
 @font-face {
   font-family: CalibriBold;
   src: url("../fonts/Calibri-Bold.21e06a6.woff2");
@@ -34,12 +37,14 @@
   list-style: none;
 }
 #practicaOberigJewelry header nav ul li {
+  color: #5c5c5c;
   text-align: center;
   margin-top: 30px;
   padding: 10px;
   width: 150px;
 }
 #practicaOberigJewelry header nav ul li:nth-child(5) {
+  font-family: minion;
   margin-top: 20px;
   margin-left: 40px;
   margin-right: 40px;
@@ -47,15 +52,16 @@
   padding-bottom: 70px;
 }
 #practicaOberigJewelry main section {
-  height: 100vh;
   flex-flow: row;
 }
 #practicaOberigJewelry main section.ring {
-  margin: 60px;
+  height: 100vh;
+  overflow: hidden;
   margin-top: 0px;
   position: relative;
   background: url("../img/background_oberig.jpg") no-repeat;
-  background-size: cover ;
+  background-size: 100vw ;
+  width: 100vw ;
 }
 #practicaOberigJewelry main section.ring figure {
   position: relative;
@@ -74,6 +80,7 @@
   left: 90px;
 }
 #practicaOberigJewelry main section.symbols {
+  height: 100vh;
   position: relative;
   display: flex;
   justify-content: center;
@@ -103,6 +110,7 @@
 #practicaOberigJewelry main section.symbols .slider {
   width: 300px;
   height: 300px;
+  position: relative;
   margin-top: 75px;
   border-radius: 50%;
   -webkit-box-shadow: inset 0 16px 35px rgba(93, 102, 114, 0.15);
@@ -121,10 +129,10 @@
 }
 #practicaOberigJewelry main section.symbols .slider h1 {
   font-size: 1.5em;
-  color: grey;
+  color: #5c5c5c;
   font-family: minion;
-  position: relative;
-  bottom: 0px;
+  position: absolute;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -178,16 +186,89 @@
   transform: translate(-50%, -50%);
 }
 #practicaOberigJewelry main section.others {
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 #practicaOberigJewelry main section.others .othersLeft {
-  width: auto;
+  color: #7b7a7a;
+  font-size: 2.2em;
+  width: 1fr;
+  font-family: minion;
 }
 #practicaOberigJewelry main section.others .othersCenter {
-  width: auto;
+  width: 1fr;
 }
 #practicaOberigJewelry main section.others .othersRight {
-  width: auto;
+  width: 1fr;
+  height: auto;
+  position: relative;
+}
+#practicaOberigJewelry main section.others .othersRight ul {
+  display: flex;
+  flex-direction: column ;
+}
+#practicaOberigJewelry main section.others .othersRight ul li {
+  font-family: Calibri;
+  position: relative;
+  margin: 20px;
+  left: 100px;
+  transition: 1s;
+}
+#practicaOberigJewelry main section.others .othersRight ul li:hover {
+  left: 80px;
+  transition: 1s;
+}
+#practicaOberigJewelry main section.brand {
+  height: 100vh;
+}
+#practicaOberigJewelry main section.brand figure.directora {
+  position: relative;
+}
+#practicaOberigJewelry main section.brand figure.directora img:first-of-type {
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+}
+#practicaOberigJewelry main section.brand h2 {
+  color: #7b7a7a;
+  text-justify: auto;
+  text-transform: uppercase;
+  font-family: mineon;
+  font-size: 2.6em;
+  width: 300px;
+}
+#practicaOberigJewelry main section.brand p {
+  font-family: Calibri;
+}
+#practicaOberigJewelry main section.collections {
+  height: 50vh;
+  background-image: url("../img/collBG.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -100px;
+  display: flex;
+  justify-content: center;
+}
+#practicaOberigJewelry main section.collections h2 {
+  position: relative;
+  top: 50%;
+  font-family: Calibri ;
+  letter-spacing: 2px;
+  font-size: 1em;
+  transform: translateX(-50%, -50%);
+}
+#practicaOberigJewelry main section.feed {
+  height: 80vh;
+}
+#practicaOberigJewelry main section.feed .cuadroIMGs {
+  margin-top: 100px;
+  width: 1050px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+#practicaOberigJewelry main section footer {
+  height: 25vh;
 }

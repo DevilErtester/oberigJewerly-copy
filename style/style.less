@@ -1,4 +1,5 @@
 #practicaOberigJewelry{
+    overflow-x: hidden;
     @font-face {
         font-family: CalibriBold;
         src: url("../fonts/Calibri-Bold.21e06a6.woff2");
@@ -29,11 +30,13 @@
                 justify-content: space-around;
                 list-style: none;
                 li{
+                    color: rgb(92, 92, 92);
                     text-align: center;
                     margin-top: 30px;
                     padding: 10px;
                     width: 150px;
                     &:nth-child(5){
+                        font-family: minion;
                         margin-top: 20px;
                         margin-left: 40px;
                         margin-right: 40px;
@@ -47,15 +50,16 @@
     main{
         
         section{
-            height: 100vh;
+            
             flex-flow: row;
             &.ring{
-                
-                margin: 60px;
+                height: 100vh;
+                overflow: hidden;
                 margin-top: 0px;
                 position: relative;
                 background: url("../img/background_oberig.jpg") no-repeat;
-                background-size: cover ;
+                background-size: 100vw ;
+                width:100vw ;
                 
 
                 figure{
@@ -76,6 +80,7 @@
                 }
             }
             &.symbols{
+                height: 100vh;
                 position: relative;;
                 @sliderSize:300px;
                 @radio: 210;
@@ -107,6 +112,7 @@
                 .slider{
                     width: @sliderSize;
                     height: @sliderSize;
+                    position: relative;
                     img{
                         width:@sliderSize ;
                         position: relative;
@@ -116,10 +122,10 @@
                     }
                     h1{
                         font-size: 1.5em;
-                        color: grey;
+                        color: rgb(92, 92, 92);
                         font-family: minion;
-                        position: relative;
-                        bottom: 0px;
+                        position: absolute;
+                        bottom: 20px;
                         left: 50%;
                         transform: translateX(-50%);
                     }
@@ -187,25 +193,94 @@
                 }
             }
             &.others{
+                height: 100vh;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 .othersLeft{
-                    width: auto;
+                    color: rgb(123, 122, 122);
+                    font-size: 2.2em;
+                    width: 1fr;
+                    font-family: minion;
+
                 }
                 .othersCenter{
-                    width: auto;
+                    width: 1fr;
                 }
                 .othersRight{
-                    width: auto;
+                    width:1fr;
+                    height: auto;
+                    position: relative;
+                    ul{
+                        display: flex;
+                        flex-direction: column ;
+                        li{
+                            font-family: Calibri;
+                            position: relative;
+                            margin: 20px;
+                            
+                            left: 100px;
+                            transition: 1s;
+                            &:hover{
+                                left: 80px;
+                                transition: 1s;
+                            }
+                        }
+                    }
                 }
                 
             }
+            &.brand{
+                height: 100vh;
+                figure.directora{
+                    position: relative;
+                    img:first-of-type{
+                        position: absolute;
+                        z-index: -1;
+                        overflow: hidden;
+                    }
+                }
+                h2{
+                    color: rgb(123, 122, 122);
+                    text-justify: auto;
+                    text-transform: uppercase;
+                    font-family: mineon;
+                    font-size: 2.6em;
+                    width: 300px;
+                }
+                p{
+                    font-family: Calibri;
+                }
+            }
             &.collections{
-                
+                height: 50vh;
+                background-image: url("../img/collBG.webp");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position-y: -100px;
+                display: flex;
+                justify-content: center;
+                h2{
+                    position: relative;
+                    top:50%;
+                    font-family:Calibri ;
+                    letter-spacing: 2px;
+                    font-size: 1em;
+                    transform: translateX(-50%,-50%);
+                }
             }
             &.feed{
-                
+                height: 80vh;
+                .cuadroIMGs{
+                    margin-top: 100px;
+                    width: 1050px;
+                    margin: auto;
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+            }
+            footer{
+                height: 25vh;
             }
         }
     }
