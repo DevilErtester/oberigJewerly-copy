@@ -232,24 +232,44 @@
             }
             &.brand{
                 height: 100vh;
-                figure.directora{
+                div{   
                     position: relative;
-                    img:first-of-type{
-                        position: absolute;
-                        z-index: -1;
-                        overflow: hidden;
+                    display: flex;
+                    width: 60%;
+                    margin: auto;
+                    figure.directora{
+                        position: relative;
+                        margin: 20px;
+                        img:first-of-type{
+                            border-radius: 50%;
+                            position: absolute;
+                            top: 10px;
+                            left: 7px;
+                            z-index: -1;
+                            overflow: hidden;
+                        }
                     }
-                }
-                h2{
-                    color: rgb(123, 122, 122);
-                    text-justify: auto;
-                    text-transform: uppercase;
-                    font-family: mineon;
-                    font-size: 2.6em;
-                    width: 300px;
-                }
-                p{
-                    font-family: Calibri;
+                    div{
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin: 20px;
+                        h2{
+                            color: rgb(123, 122, 122);
+                            text-justify: auto;
+                            text-transform: uppercase;
+                            font-family: mineon;
+                            font-size: 50px;
+                            line-height: 65px;
+                            width: 300px;
+                        }
+                        p{
+                            color: #444344;
+                            font-family: Calibri,sans-serif;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 26px;
+                        }
+                    }
                 }
             }
             &.collections{

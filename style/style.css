@@ -223,24 +223,44 @@
 #practicaOberigJewelry main section.brand {
   height: 100vh;
 }
-#practicaOberigJewelry main section.brand figure.directora {
+#practicaOberigJewelry main section.brand div {
   position: relative;
+  display: flex;
+  width: 60%;
+  margin: auto;
 }
-#practicaOberigJewelry main section.brand figure.directora img:first-of-type {
+#practicaOberigJewelry main section.brand div figure.directora {
+  position: relative;
+  margin: 20px;
+}
+#practicaOberigJewelry main section.brand div figure.directora img:first-of-type {
+  border-radius: 50%;
   position: absolute;
+  top: 10px;
+  left: 7px;
   z-index: -1;
   overflow: hidden;
 }
-#practicaOberigJewelry main section.brand h2 {
+#practicaOberigJewelry main section.brand div div {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+#practicaOberigJewelry main section.brand div div h2 {
   color: #7b7a7a;
   text-justify: auto;
   text-transform: uppercase;
   font-family: mineon;
-  font-size: 2.6em;
+  font-size: 50px;
+  line-height: 65px;
   width: 300px;
 }
-#practicaOberigJewelry main section.brand p {
-  font-family: Calibri;
+#practicaOberigJewelry main section.brand div div p {
+  color: #444344;
+  font-family: Calibri, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
 }
 #practicaOberigJewelry main section.collections {
   height: 50vh;
