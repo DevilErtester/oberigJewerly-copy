@@ -29,11 +29,13 @@
                 display:flex;
                 justify-content: space-around;
                 list-style: none;
+                font-size: 15px;
                 li{
                     color: rgb(92, 92, 92);
                     text-align: center;
                     margin-top: 30px;
-                    padding: 10px;
+                    // padding: 10px;
+                    font-family: Calibri;
                     width: 150px;
                     &:nth-child(5){
                         font-family: minion;
@@ -277,7 +279,6 @@
                 background-image: url("../img/collBG.webp");
                 background-size: cover;
                 background-repeat: no-repeat;
-                background-position-y: -100px;
                 display: flex;
                 justify-content: center;
                 h2{
@@ -290,14 +291,14 @@
                 }
             }
             &.feed{
-                height: 80vh;
+                height: 60vh;
                 .sectionFeed{
                     position: relative;
                     height: 420px;
                     width: 1280px;
                     max-width: 100%;
                     margin: 60px auto 0;
-                    background-color: grey;
+                    
                     overflow: hidden;
                     .cuadroIMGs{
                             display: -webkit-box;
@@ -365,13 +366,87 @@
                         text-transform: uppercase;
                         letter-spacing: 3px;
                         text-align: center;
-                        
                     }
                 }
             }
-            footer{
-                height: 25vh;
+        }
+    }
+    footer{      
+        display: flex;
+        height: 20vh;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        a:link {
+            text-decoration: none;
+          }
+          
+          
+          a:visited {
+            text-decoration: none;
+          }
+          
+          
+          a:hover {
+            text-decoration: underline;
+          }
+          
+          
+          a:active {
+            text-decoration: underline;
+          } 
+        .footerLeft{
+            color: #a5a5a5;
+            font-family: Calibri,sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+            margin-left: 30px;
+        }
+        .footerCenter{
+            display: flex;
+            .TheFooter__social {
+                margin: 20px;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                position: relative;
+                font-family: CalibriBold,sans-serif;
+                font-size: 14px;
+                line-height: 24px;
+                text-transform: uppercase;
+                letter-spacing: 2.5px;
+                text-decoration: none;
             }
+        }
+        .footerRight{
+            color: #a5a5a5;
+            font-family: Calibri,sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+           
+        }
+        .footerBottom{
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            margin-top: 30px;
+            white-space: nowrap;
+            font-size: 12px;
+            line-height: 24px;
+            letter-spacing: .2em;
+            padding: 0 15px;
+            p{
+                color: #a5a5a5;
+                font-family: Calibri,sans-serif;
+                margin: 20px;
+                margin-top: 0px;
+                margin-bottom:0px ;
+            }
+                
         }
     }
 }
